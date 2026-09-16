@@ -33,6 +33,7 @@ jobs:
         run: pnpm exec vite build
         env:
           VITE_GITHUB_PAGES: "true"
+          VITE_API_BASE_URL: "https://interviewai-fpeznqv5.manus.space"
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
