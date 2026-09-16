@@ -66,6 +66,12 @@ function App() {
         {page === "interview" && <Interview started={interviewStarted} setStarted={setInterviewStarted} question={question} setQuestion={setQuestion} answer={answer} setAnswer={setAnswer} onNavigate={go} />}
         {page === "questions" && <Questions onNavigate={go} />}
         {page === "dashboard" && <Dashboard greeting={greeting} onNavigate={go} />}
+        <footer className="border-t border-[#dfe6f2] bg-white px-5 py-7 text-center lg:px-10">
+          <p className="text-base font-extrabold tracking-wide text-[#17244b]">
+            © {new Date().getFullYear()} جميع حقوق الملكية الفكرية محفوظة لـ <span className="text-[#4265ff]">تمارا الشباطات</span>
+          </p>
+          <p className="mt-2 text-xs font-semibold text-[#8190a8]">Interview Coach · منصة الإعداد المهني</p>
+        </footer>
         <Toaster position="bottom-left" richColors />
       </div>
     </TooltipProvider>
